@@ -46,7 +46,8 @@ export const Home = () => {
 
       try {
         const response = await axios.post(
-          "https://removebgbackend-qr3ed3mct-ankitking25s-projects.vercel.app/",
+           "https://removebgbackend-qr3ed3mct-ankitking25s-projects.vercel.app/upload",
+         
           formData,
           {
             headers: { "Content-Type": "multipart/form-data" },
