@@ -1,22 +1,17 @@
-
 import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth';
-import {getDatabase} from 'firebase/database'
+import { getDatabase } from 'firebase/database';
 import { getFirestore } from "firebase/firestore";
+
 const firebaseConfig = {
-
-
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
-
-
+  apiKey: "AIzaSyBtzqFtflBV67he8Qw2WFo07v4TIFl-qcg",
+  authDomain: "backgroundremove-ab363.firebaseapp.com",
+  projectId: "backgroundremove-ab363",
+  storageBucket: "backgroundremove-ab363.firebasestorage.app",
+  messagingSenderId: "5870154830",
+  appId: "1:5870154830:web:7a98a61cc25362af077f1f",
+  measurementId: "G-8XJMSZETXR",
 };
-
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
